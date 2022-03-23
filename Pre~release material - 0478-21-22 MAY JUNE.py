@@ -2,7 +2,7 @@
 # Pre-release material - 0478/21/22 MAY/JUNE
 # Python code 
 # 2022 Exam code ~ Created by Ongl syn cwympo 
-# https://github.com/iTsHackYouSate
+# https://github.com/Ongl-syn-cwympo
 
 
 # Within this piece of code, I use .append quite frequently - This is a short desctiprion.
