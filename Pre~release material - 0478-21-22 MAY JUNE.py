@@ -85,18 +85,18 @@ while input("Would you like to add a user?") == "Yes": # No break with th while 
   if Time_Since_Joined.total_seconds()/(365.25*24*60*60) >= 1:
     print("You have expired :(")
       
-# ~ Explination of line 71:
+# ~ Explination of line 80:
 # date_entry.split("/") - splits the string date_entry into a list at every "/", so 2021/03/21 gets turned into a list with elements ["2021", "03", "21"]
 # map(int, date_entry.split("/")) - the map() function will loop through every element in the list provided as the second parameter and run the function provided in the first parameter (https://www.geeksforgeeks.org/python-map-function/). In this case the "int" is a builtin function which will convert every element into an integer from the string. So in the end ["2021", "03", "21"] will turn into [2021, 03, 21] (only the types of the values changed from string to int).
 # Year, Month, Day = map(int, date_entry.split("/")) - finally, it will asign the first element of the array provided by the map() function into the Year variable, the second into the Month variable and the third into the Day variable. So you will end up with the Year holding the value 2021, Month with 3 and Day with 21.
 
-# ~ Explination of line 75:
+# ~ Explination of line 84:
 # datetime.now() - the current date and time in a single object
 # datetime.now()-Date_of_Joining[count] - get the difference between the dates of now and the date that was gotten from the user before. The [count] part is there because Date_of_Joining is an array, meaning it has multiple elements and by adding [count] you specify what element in the array you want to use. The variable count should therefore represent the index of the current user.
 # Time_Since_Joined = datetime.now()-Date_of_Joining[count] - store the difference between these two dates into a variable. In this case it does not have to be an array since this value does not need to be
 # stored for every user but will be used just this once.
 
-# ~ Explination of line 76 (where the numbers are multiplied):
+# ~ Explination of line 85 (where the numbers are multiplied):
 # Time_Since_Joined.total_seconds() - this will give back the difference between the two dates calculated on line 7 in seconds
 # Time_Since_Joined.total_seconds()/(365.25*24*60*60) - the difference in seconds divided by the amount of seconds in a year (365.25*24*60*60 = 31557600 aka how many seconds are in a year)
 # if  Time_Since_Joined.total_seconds()/(365.25*24*60*60) >= 1: - if the difference in two dates is greater than 1 year, then do the thing inside this if statement 
