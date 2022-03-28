@@ -1,4 +1,4 @@
-Paper 21 Problem-solving and Programming - PRE-RELEASE MATERIAL SOLUTON - 0478/21 - MAY/JUNE 2022 
+# Paper 21 Problem-solving and Programming - PRE-RELEASE MATERIAL SOLUTON - 0478/21 - MAY/JUNE 2022 
 
 This repository contains python solution for Cambridge IGCSE pre-release material 2022 Paper 21 May/June.
 To the best of my ability, I have completed all the requirements given for the three tasks & Extended task.
@@ -12,7 +12,7 @@ Files in this repository:
 - README.md
 
 
-Paper 21 Problem-solving and Programming May/June 2022 - PRE-RELEASE MATERIAL
+# Paper 21 Problem-solving and Programming May/June 2022 - PRE-RELEASE MATERIAL
 
 In preparation for the examination candidates should attempt the following practical tasks by writing and testing a program or programs.
 
@@ -34,7 +34,7 @@ Write and test a program or programs for the Friends of Seaview Pier:
 
 You will need to complete these three tasks. Each task must be fully tested.
 
-TASK 1 - Becoming a member of Friends of Seaview Pier
+# TASK 1 - Becoming a member of Friends of Seaview Pier
 
 Set up a system to enable people to become members of Friends of Seaview Pier and for each new member enter: 
 
@@ -49,7 +49,7 @@ Set up a system to enable people to become members of Friends of Seaview Pier an
 
 All of this inforamtion needs tob be stored using suitable data structures.
 
-TASK 2 - Using membership data
+# TASK 2 - Using membership data
 
 Extend the program in TASK 1 so that a list of the first and last names of members can be output in any of the following categories:
 
@@ -60,11 +60,11 @@ Extend the program in TASK 1 so that a list of the first and last names of membe
 - Members whose membership has expired (they have not re-joined this year)
 - Members who have not yet paid their $75 fee.
 
-TASK 3 - Sponsoringa wooden plank
+# TASK 3 - Sponsoringa wooden plank
 
 Add an additional option to the program in TASK 1 to enable the pier's wooden planks to be sponsored. Separate data structures should be used to store the
 names of the individuals and the short messages they would like to have written on their brass plaque. An ouput would display everything that was input for
 the sponsor to confirm. If errors are found, the program should allow data to be re-entered. Once complete, the data is stored and the sponsor is charged
 $200.
 
-CAMBRIDGE ASSESSMENT INTERNATIONAL EDUCATION
+# CAMBRIDGE ASSESSMENT INTERNATIONAL EDUCATION
