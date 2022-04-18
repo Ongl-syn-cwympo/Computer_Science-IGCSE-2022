@@ -7,9 +7,9 @@ If you have any suggestions regarding the solution. Please feel free to share th
 
 Files in this repository:
 
-- Python Solution
-- Pseudocode Solution
-- README.md
+- Python Solution (Shows the python code in full)
+- Pseudocode Solution ((Shows the pseudocode in full)Differs slightly from the Python code)
+- README.md (Displays needed information about the tasks for writing the code)
 
 
 # Paper 21 Problem-solving and Programming May/June 2022 - PRE-RELEASE MATERIAL
