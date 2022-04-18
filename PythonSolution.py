@@ -16,10 +16,10 @@ Full_name = list()
 Date_of_Joining = list()
 Sponsor = list()
 Fee_Paid = list()
-Volunter_Choice = list()
-Volunter_Area = list()
-VolunterYes = bool
-VolunterNo = bool
+Volunteer_Choice = list()
+Volunteer_Area = list()
+VolunteerYes = bool
+VolunteerNo = bool
 Messages = list()
 People_Sponsored = list()
 
@@ -38,15 +38,15 @@ while input("Would you like to add a user?") == "Yes": # No break with th while 
   # Combines both the first and second name 
   Full_name.append(F_name + " " + S_name)
   
-  # True or false ~ Volunrer = yes or no
-  print("Would you like to be a volunter?")
+  # True or false ~ Volunteer = yes or no
+  print("Would you like to be a volunteer?")
   Volunter_Choice.append(input("""Choose 1: To be a volunter Choose  (Type in True, 1 or Yes) 2: To not be a volunter (Type in False, 2 or No)"""))
   
   # Stating what is False and True ~ To do with while loops
   VolunterYes = True 
   VolunterNo = False
   
-  if Volunter_Choice[count] == "True" or Volunter_Choice[count] == "1" or Volunter_Choice[count] == "Yes":
+  if Volunteer_Choice[count] == "True" or Volunteer_Choice[count] == "1" or Volunteer_Choice[count] == "Yes":
      print("Nice choice")
      
   
@@ -58,16 +58,20 @@ while input("Would you like to add a user?") == "Yes": # No break with th while 
 
   # Selection of area for user ~ 3 options 
   print("What area would you like to be in?")
-  Volunter_Area.append(int(input("""Choose 1: Pier enterance gate Choose 2: Gift shop Choose 3: Painting and decorating""")))
+  Volunteer_Area.append(int(input("""Choose 1: Pier enterance gate Choose 2: Gift shop Choose 3: Painting and decorating""")))
   
-  while Volunter_Area[count]<1 or Volunter_Area[count]>3:
-      Volunter_Area[count] = ("Enter 1,2 or 3 ~ Any other numb is invalid")
-      if Volunter_Area[count] == 1:
+  while Volunteer_Area[count]<1 or Volunteer_Area[count]>3:
+      Volunteer_Area[count] = ("Enter 1,2 or 3 ~ Any other numb is invalid")
+
+      if Volunteer_Area[count] == 1:
         print("You have chosen Pier enterance gate")
-      if Volunter_Area[count] == 2:
+
+      if Volunteer_Area[count] == 2:
         print("You have chosen Gift shop")
-      if Volunter_Area[count] == 3:
+
+      if Volunteer_Area[count] == 3:
         print("You have chosen Painting and decorating")
+
       else:
         print("Invalid ~ Unable to execute")
         sys.exit(exit_code) # Terminates the program, due to error/invalid enrty code
@@ -121,7 +125,7 @@ while input("Do you want to see the info?") == "Yes": # No break with th while l
   
   # Membership data ~ Outputting stats
   print("What stats of the members would you like to look at?")
-  print("1. Members who have been chosen to be volunters")
+  print("1. Members who have been chosen to be volunteers")
   print("2. Members who want to work at the pier")
   print("3. Members who want to work at the gift shop")
   print("4. Members who want to work at the decorating area")
@@ -131,23 +135,23 @@ while input("Do you want to see the info?") == "Yes": # No break with th while l
   # A series of if statments for the users selection ~ Displays the data for chosen num
   selection = int(input())
   if selection == 1:
-    for i in range(0,len(Volunter_Choice)):
-      if Volunter_Choice[i] == "True" or Volunter_Choice[i] == "1" or Volunter_Choice[i] == "Yes":
+    for i in range(0,len(Volunteer_Choice)):
+      if Volunteer_Choice[i] == "True" or Volunteer_Choice[i] == "1" or Volunteer_Choice[i] == "Yes":
         print Full_name[i] 
         
   if selection == 2:
-    for i in range(0,len(Volunter_Area)):
-      if Volunter_Area[i] == 1:
+    for i in range(0,len(Volunteer_Area)):
+      if Volunteer_Area[i] == 1:
         print Full_name[i] 
         
   if selection == 3:
-    for i in range(0,len(Volunter_Area)):
-      if Volunter_Area[i] == 2:
+    for i in range(0,len(Volunteer_Area)):
+      if Volunteer_Area[i] == 2:
         print Full_name[i] 
         
   if selection == 4:
-    for i in range(0,len(Volunter_Area)):
-      if Volunter_Area[i] == 3:
+    for i in range(0,len(Volunteer_Area)):
+      if Volunteer_Area[i] == 3:
         print Full_name[i] 
         
   if selection == 5:
