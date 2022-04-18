@@ -1,1 +1,164 @@
-COMING SOON!
+# ~ Computer Science EXAM PSEUDOCODE ~
+# Pre-release material - 0478/21/22 MAY/JUNE
+# Pseudocode 
+# 2022 Exam pseudocode ~ Created by Ongl syn cwympo 
+# https://github.com/Ongl-syn-cwympo
+
+# TASK 1
+
+FOR Count ← 1 TO 1000
+	
+OUTPUT “Enter your first name”
+	First_Name ← INPUT
+	OUTPUT “Enter your second name”
+	Second_Name  ← INPUT
+	Name ← First_Name + Second_Name
+	Names[Count] = Name
+	
+	WHILE Error = Yes
+	OUTPUT “Do you want to volunteer?”
+		Volunteer ← INPUT
+		If Volunteer = Yes
+			Volunteer_Yes[Count] = Name
+			OUTPUT “Where would you like to work: 1. Pier entrance gate 2.The                                                      .                                                    gift shop or 3.Painting and decorating”
+			Work_area = INPUT
+			Work_areas[Count] = INPUT
+			IF Work_area < 1 Work_area OR Work_area > 3 THEN
+				OUTPUT “Error, wrong input”
+			ENDIF
+		ELSEIF Volunteer = No THEN
+			OUTPUT “That’s a shame”
+			Volunteer_No[Count] = Name
+		ELSE
+			OUTPUT “Error, wrong input”
+		ENDIF
+	ENDWHILE
+
+	WHILE Error = Yes
+		OUTPUT “What day did you join?”
+		Day_Joined = INPUT
+
+		OUTPUT “What month did you join?”
+		Month_Joined = INPUT
+
+		OUTPUT “What year did you join?”
+		Year_Joined = INPUT
+		
+		Date_Joined = Day_Joined + “/”  + Month_Joined + “/” + Year_Joined
+		IF YearJoined = 2022 THEN
+			ExpiredNo[Count] = Name
+      
+		ELSEIF YearJoined < 2022 THEN
+			ExpiredYes[Count] = Name
+      
+		ELSE
+			OUTPUT “Input invalid, please enter a date numbered 2022 or less.”
+			Error = Yes
+      
+		ENDIF
+	ENDWHILE
+
+
+	WHILE Error = Yes
+		OUTPUT “Have you paid the $75 fee?”
+		PaidYesNo = INPUT
+    
+		IF PaidYesNo = Yes THEN
+			OUTPUT “Very well”
+			PaidYes[Count] = Name
+      
+		ELSEIF PaidYesNo = No THEN
+			OUTPUT “Make sure to pay soon”
+			PaidNo[Count] = Name
+      
+		ELSE
+			OUTPUT “Input invalid!, please write either Yes or No”
+			Error = Yes
+		ENDIF
+	ENDWHILE
+NEXT Count
+
+
+# TASK 2
+
+Repeat = Yes
+WHILE Repeat = Yes
+OUTPUT “What stats of members would you like to view?”
+OUTPUT “Enter a number, 1 through 6”
+OUTPUT “1. Members who have been chosen to be volunteers ”
+OUTPUT “2. Members who want to work at the pier ”
+OUTPUT “3. Members who want to work at the gift shop ”
+OUTPUT “4. Members who want to work at the decorating area ”
+OUTPUT “5. Members whose membership has expired ”
+OUTPUT “6. Members who have not not paid the fee ”
+
+View = INPUT
+CASE View OF 
+
+	1: FOR Count ← 1 TO 1000
+OUTPUT Volunteers[Count]
+     NEXT Count
+
+	2: FOR Count ← 1 TO 1000
+IF Workareas[Count] = 1
+	OUTPUT Names[Count]
+ENDIF
+     NEXT Count
+
+	3: FOR Count ← 1 TO 1000
+IF Workareas[Count] = 2
+	OUTPUT Names[Count]
+ENDIF
+     NEXT Count
+
+	4: FOR Count ← 1 TO 1000
+IF Workareas[Count] = 3
+	OUTPUT Names[Count]
+ENDIF
+     NEXT Count
+
+5. FOR Count ← 1 TO 1000
+OUTPUT ExpiredYes[Count]
+     NEXT Count
+
+6. FOR Count ← 1 TO 1000
+OUTPUT PaidNo[Count]
+     NEXT Count
+
+OTHERWISE: OUTPUT “This is the end of the program”
+		Repeat = No
+ENDCASE
+		
+    
+# TASK 3
+
+WHILE Error = Yes
+	Error = No
+	OUTPUT “Would you like to sponsor a  wooden plank?”
+	sponsor = INPUT
+  
+	IF Sponsor = Yes
+		OUTPUT “What message do you want on your plaque?”
+		Message = INPUT
+		OUTPUT Message + “Please type Yes to confirm this message”
+		MessageConfirmation = INPUT
+    
+		IF MessageConfirmation  = Yes THEN
+			Message = Name + “: ” Message
+			Messages[Count] = Message
+			OUTPUT “Account charged 200$ for sponsor”
+      
+		ELSEIF Sponsor = No THEN
+			Error = Yes
+      
+		ELSE
+			OUTPUT “Error, please choose either Yes or No”
+			Error = Yes
+      
+	ELSEIF Sponsor = No THEN
+		OUTPUT “What a shame, have a good day.”
+    
+	ELSE
+		OUTPUT “Input invalid!, please choose either Yes or No”
+		Error = Yes
+ENDWHILE
