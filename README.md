@@ -8,7 +8,7 @@ If you have any suggestions regarding the solution. Please feel free to share th
 Files in this repository:
 
 - Python Solution
-- Pseudocode Solution (Coming soon)
+- Pseudocode Solution
 - README.md
 
 
